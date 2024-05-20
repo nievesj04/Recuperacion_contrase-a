@@ -1,0 +1,61 @@
+    <Grid BackgroundColor="White">
+
+    <Grid.RowDefinitions>
+        <RowDefinition Height="0.1*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="0.1*"/>
+    </Grid.RowDefinitions>
+
+    <StackLayout BackgroundColor="Orange" 
+             Grid.Row="0">
+
+        <Label Text="Recuperación de usuario"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Margin="0,13,0,0"
+                FontSize="26"/>
+    </StackLayout>
+
+
+    <StackLayout VerticalOptions="CenterAndExpand" 
+                 HorizontalOptions="CenterAndExpand" 
+                 Padding="30"
+                 Grid.Row="1">
+
+        <Frame CornerRadius="20"
+        BackgroundColor="#EDEDED">
+            <Entry
+                x:Name="contraCodUsuaEntry"
+                Placeholder="Ingrese el código de usuario" 
+                BackgroundColor="#EDEDED" 
+                WidthRequest="250" 
+                TextColor="#444444" 
+                PlaceholderColor="#999999" 
+                HeightRequest="30" 
+                HorizontalTextAlignment="Center" 
+                VerticalOptions="Start"/>
+        </Frame>
+        <BoxView HeightRequest="50" 
+                 BackgroundColor="White"/>
+
+
+
+        <BoxView HeightRequest="50" 
+                 BackgroundColor="White"/>
+
+        <Button 
+            Clicked="btn_sendCodUsua"
+            Text="Enviar" 
+            BackgroundColor="Orange" 
+            TextColor="White" 
+            FontSize="20"
+            CornerRadius="20" 
+            WidthRequest="250" 
+            HeightRequest="60" 
+            HorizontalOptions="Center" 
+            VerticalOptions="StartAndExpand"/>
+
+    </StackLayout>
+        
+
+</Grid>
